@@ -65,7 +65,7 @@ enum type_t : uint8_t {
 * @note The serial stream should be already initialized
 * @return  void
 */
-  SD_ZH03B( Stream& serial, type_t _sensorModel = SENSOR_ZH03B );
+  SD_ZH03B( Stream& serial = Serial2, type_t _sensorModel = SENSOR_ZH03B );
 
 /* 
   Class Destructur

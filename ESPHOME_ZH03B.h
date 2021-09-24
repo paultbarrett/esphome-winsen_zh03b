@@ -1,9 +1,9 @@
 #include "esphome.h"
-#incldue "SD_ZH03B.h"
+#include "SD_ZH03B.h"
 
 class WinsenZH03B : public PollingComponent {
  public:
-  SD_ZH03B ZH03B( Serial2, SD_ZH03B::SENSOR_ZH03B ); // Runs on Serial2 on the ESP32
+  SD_ZH03B ZH03B; // Runs on Serial2 on the ESP32
   Sensor *pm1_sensor = new Sensor();
   Sensor *pm25_sensor = new Sensor();
   Sensor *pm10_sensor = new Sensor();
