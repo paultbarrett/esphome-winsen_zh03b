@@ -8,7 +8,7 @@ class WinsenZH03B : public PollingComponent {
   Sensor *pm25_sensor = new Sensor();
   Sensor *pm10_sensor = new Sensor();
 
-  WinsenZH03B() : PollingComponent(15000) { }
+  WinsenZH03B() : PollingComponent(10000) { } // Poll sensor every 10 seconds
 
   void setup() override {
     Serial2.begin(9600);
